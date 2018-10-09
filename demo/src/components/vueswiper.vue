@@ -8,8 +8,8 @@
       </div>
     </swiper-slide>
 
-    <div class="swiper-button-prev prev1" slot="button-prev"></div>
-    <div class="swiper-button-next next1" slot="button-next"></div>
+    <div class="swiper-button-prev prev1" slot="button-prev" @click="prev()"></div>
+    <div class="swiper-button-next next1" slot="button-next" @click="next()"></div>
     <div class="swiper-pagination" slot="pagination"></div>
   </swiper>
 
@@ -21,8 +21,8 @@
       </div>
     </swiper-slide>
 
-    <div class="swiper-button-prev prev2 hide" slot="button-prev"></div>
-    <div class="swiper-button-next next2 hide" slot="button-next"></div>
+    <div id="prev" class="swiper-button-prev prev2" slot="button-prev"></div>
+    <div id="next" class="swiper-button-next next2" slot="button-next"></div>
   </swiper>
 </div>
 </template>
@@ -74,6 +74,12 @@
         })
         slide.show=false
         this.swiper.slideTo(index+1, 500, false)
+      },
+      prev(){
+        document.getElementById('prev').click();
+      },
+      next(){
+        document.getElementById('next').click();
       }
     }
   }
