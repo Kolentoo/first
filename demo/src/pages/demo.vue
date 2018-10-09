@@ -1,13 +1,16 @@
 <template>
     <div class="demo">
 
-        <vueswiper :images="imgdata"></vueswiper>
+        <!--<vueswiper :images="imgdata"></vueswiper>-->
+        <imgswiper :images="imgdata"></imgswiper>
+
 
     </div>
 </template>
 
 <script>
     import vueswiper from '../components/vueswiper'
+    import imgswiper from '../components/imgswiper'
     export default {
         data(){
             return{
@@ -33,7 +36,7 @@
 
         },
         components: {
-            vueswiper
+            vueswiper,imgswiper
         }
     }
 </script>
