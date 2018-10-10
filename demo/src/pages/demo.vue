@@ -3,7 +3,6 @@
 
         <imgswiper :images="imgdata"></imgswiper>
 
-
     </div>
 </template>
 
@@ -24,7 +23,7 @@
                     {'imgurl':'http://image.vanfun.net/2018/1007/0835469220000890.jpg','imgname':'house8'},
                     {'imgurl':'http://image.vanfun.net/2018/1007/08354692200008910.jpg','imgname':'house9'},
                     {'imgurl':'http://image.vanfun.net/2018/1007/08354692200008911.jpg','imgname':'house10'}
-                ],
+                ]
             }
         },
         created(){

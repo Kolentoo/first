@@ -10,6 +10,8 @@ import echarts from 'echarts'
 
 Vue.use(VueAwesomeSwiper, /* { default global options } */)
 
+Vue.prototype.$echarts = echarts 
+
 
 Vue.config.productionTip = false
 
