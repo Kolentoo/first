@@ -7,7 +7,7 @@ import gmap from '../pages/gmap'
 Vue.use(Router)
 
 export default new Router({
-  mode:'history',
+  // mode:'history',
   routes: [
     {
       path: '/',
